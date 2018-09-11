@@ -3,11 +3,27 @@
     <head>
         <title>Learn Enough JavaScript</title>
         <meta charset="utf-8">
+        <script src="day.js">// to find the file whit dayName, need to come before script using it </script> 
         <script>
-            alert("Hello, world!");
-            let firstName = "Ola";  //set variabale with let
-            let lastName = "Udén";
-            console.log(`${firstName} ${lastName}`) //write variable in console
+//            function dayName(date) {  //Function name created dayName, attribute name date
+//                const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", //const array
+//                                        "Thursday", "Friday", "Saturday"]; 
+//                return daysOfTheWeek[date.getDay()]; //getDay js method to get number for today week day, start 0
+// for date in variable date.
+//            }
+
+
+
+
+            let now = new Date(); // Date() is a method to get date, no argument today
+            alert(`Hello, world! Happy ${dayName(now)}.`); //`innesluta variabel, $ är variabel{} innesluter själva variabeln, dayName som visar namnet på dagen för nummret now genererar
+           // const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            // let now = new Date();
+            // let dayName = daysOfTheWeek[now.getDay()];
+            // alert("Hello, world!");
+            // let firstName = "Ola";  //set variabale with let
+            // let lastName = "Udén";
+            // console.log(`${firstName} ${lastName} Happy ${dayName}.`) //write variable in console
         </script>
                 <script>
                         alert("Hello, world2!");
